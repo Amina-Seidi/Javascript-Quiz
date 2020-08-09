@@ -2,68 +2,60 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Game!</title>
         <link   rel="stylesheet" 
                 href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
                 integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
                 crossorigin="anonymous">
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <title>Coding Assessment</title>
+        <link rel="stylesheet" href="style.css">
+        <title>Coding Quiz Game</title>
     </head>
 
     <body>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light" style="background-color:lightsteelblue;">
             <p class="navName">Javascript Quiz</p>
-            <!--  view high scores from the navbar using local storage  -->
+                <div id="penalty"></div>
             <div class="navbar-right" id="highScores">
-                <a href="####">High Scores</a>
+                <!--  Timer  -->
+                <div class="container topRight">
+                    <time id = "timer">Time: <span>0</span></time>
+                </div>
+                <!--  View high scores from the navbar using local storage  -->
+                <div class="container topRight">
+                    <a href="####">High Scores</a>
+                </div>
             </div>
         </nav>
 
-        <div class="card" style="margin: 30px 40px;">
+        <div class="card" style="margin: 50px 80px;">
             <div class="card-body">
               <h5 class="card-title text-center">
                   Javascript Quiz
-                <!--  title will be question number (incremented)  -->
               </h5>
-              <p class="card-text text-center" id="questionText">
-                Try to answer the following questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by 10 seconds!
-                <!--  question text goes here -->
-              </p>
-          <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                    <button class="btn btn-primary" id="startQuiz" type="submit">Start Quiz</button>
-                        <div id="questionButtons" style= "display:none">
-                            <button value= "1" class="btn btn-primary" type="submit">Button</button>
-                            <button value= "2" class="btn btn-primary" type="submit">Button</button>
-                            <button value= "3" class="btn btn-primary" type="submit">Button</button>
-                        </div>
+            <div class="card-text text-center" style="max-height: fit-content" id="questionText">
+                Please attempt to answer the following questions before the time runs out. Remember, incorrect answers will penalize your scoretime by taking away 10 seconds!
+                    <div class="container">
+                            <div id="startPrompt" class="col text-center">
+                                <button id="startQuiz" class="start-btn btn">Start Quiz</button>
+                            </div>
+                            <div id="quizQuestions" style= "display:none">
+                                        <button value= "1" class="btn btn-custom" type="submit">Button</button>
+                                        <button value= "2" class="btn btn-custom" type="submit">Button</button>
+                                        <button value= "3" class="btn btn-custom" type="submit">Button</button>
+                            </div>
                     </div>
-                </div>
-           </div>
-        </div>
-
-        <div class="card-footer text-center">
-            <p>
-                <!--  will display "correct" or "wrong" after each question  -->
-            </p>
-        </div>
-      
-        <!--  Timer  -->
-        <div class="container card" style="border: none; float: left;">
-            <div class="row">
-                <div class="col">
-                    <div id="timer"></div>
-                </div>
-                <div class="col">
-                    <div id="penalty"></div>
-                </div>
             </div>
+            </div>
+        
+            <div class="card-footer text-center">
+                <p>
+                    <!--  will display "correct" or "wrong" after each question  -->
+                </p>
+            </div>
+
         </div>
-        
-        <script src="script.js"></script>
-        <script src="timer.js"></script>
-        
-    
+        <script src="./script.js"></script>
+       
     </body>
 </html>
