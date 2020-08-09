@@ -1,0 +1,125 @@
+body {
+  background-color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none
+}
+.card{
+  border-radius: 25px;
+
+}
+
+.card-footer{
+  border-radius: 0px 0px 25px 25px
+}
+.title{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.btn-custom{
+  background-color: lightsteelblue;
+  color: black;
+  cursor: pointer;
+  float: center;
+  margin: 10px;
+}
+
+.navName{
+  font-size: 30px;
+  text-align: center;
+}
+
+.topRight{
+  padding-right: 20px;
+  text-align: center;
+  font-size: 20px;
+  color:black;
+  float: right;
+}
+
+
+.question{
+  padding: 20px;
+  font-size: 22px;
+  background: rgb(198, 212, 212);
+  border-radius: 1em;
+  margin: 10px 0 10px 0;
+  color: black;
+}
+
+#questionText {
+  padding: 0 30px;
+  margin: 0 0 16px;
+  line-height: 2.5;
+}
+
+.option{
+  display: inline-block;
+  width: 500px;
+  padding: 10px 0 10px 15px;
+  vertical-align: middle;
+  background-color: rgb(139, 238, 200);
+  margin: 5px;
+  color: black;
+  border-radius: 20px;
+}
+
+.option:hover{
+  background: navajowhite;
+  color: rgb(102, 101, 170);
+}
+
+.next-btn{
+  border: none;
+  outline: none;
+  background: lightgray;
+  width: 100px;
+  height: 55px;
+  border-radius: 1em;
+  cursor: pointer;
+  float: right;
+  margin: 10px;
+}
+
+.start-btn{
+  border: none;
+  outline: none;
+  background: lightgray;
+  width: 100px;
+  height: 55px;
+  border-radius: 1em;
+  cursor: pointer;
+  float: center;
+  margin: 10px;
+  background-color:lightsteelblue;
+}
+
+
+.result{
+  height: 200px;
+  text-align: center;
+  font-size: 75px;
+}
+
+.option input:checked .option{
+  background: greenyellow;
+  color: hotpink;
+}
+
+#clock{ 
+  flex: inherit;
+  float: middle;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+  width: 13em;
+  height: 2em;
+  border-radius: .5em;
+
+}
