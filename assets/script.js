@@ -5,11 +5,8 @@
   var footerEl = document.querySelector(".card-footer")
 
   var btn1 = questionBtn.children[0];
-  console.log(questionBtn.children[0]);
   var btn2 = questionBtn.children[1];
-  console.log(questionBtn.children[1]);
   var btn3 = questionBtn.children[2];
-  console.log(questionBtn.children[2]);
   
 
   startBtn.addEventListener("click", startGame)
@@ -21,7 +18,6 @@
           questionBtn.style.display = "inline-block";
           startTimer();
           generateQuestion();
-      console.log("Started");
       
   }
   // Timer Variables
